@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="gradientViewHeigth">125dp</dimen>
+    <dimen name="gradientViewWidth">125dp</dimen>
+    <dimen name="connStatWidth">50dp</dimen>
+    <dimen name="connStatHeigth">50dp</dimen>
+    <dimen name="readStatWidth">200dp</dimen>
+    <dimen name="readStatHeigth">50dp</dimen>
+    <dimen name="txtSize">60sp</dimen>
+</resources>

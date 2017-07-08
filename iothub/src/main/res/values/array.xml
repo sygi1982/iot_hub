@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="updateDevType">
+        <item name="WIFI">WIFI</item>
+        <item name="BLUETOOTH">BLUETOOTH</item>
+        <item name="FAKE">FAKE</item>
+    </string-array>
+    <string-array name="updateDevTypeValues">
+        <item name="WIFI">0</item>
+        <item name="BLUETOOTH">1</item>
+        <item name="FAKE">255</item>
+    </string-array>
+    <string-array name="updateRefreshRate">
+        <item name="500">500ms</item>
+        <item name="1000">1000ms</item>
+        <item name="1500">1500ms</item>
+        <item name="2000">2000ms</item>
+        <item name="2500">2500ms</item>
+        <item name="3000">3000ms</item>
+        <item name="3500">3500ms</item>
+    </string-array>
+    <string-array name="updateRefreshRateValues">
+        <item name="500">500</item>
+        <item name="1000">1000</item>
+        <item name="1500">1500</item>
+        <item name="2000">2000</item>
+        <item name="2500">2500</item>
+        <item name="3000">3000</item>
+        <item name="3500">3500</item>
+    </string-array>
+    <string-array name="updateEndpointTimeout">
+        <item name="500">0.5 sec</item>
+        <item name="1000">1 sec</item>
+        <item name="2000">2 sec</item>
+        <item name="5000">5 sec</item>
+        <item name="10000">10 sec</item>
+        <item name="0">Disabled</item>
+    </string-array>
+    <string-array name="updateEndpointTimeoutValues">
+        <item name="500">500</item>
+        <item name="1000">1000</item>
+        <item name="2000">2000</item>
+        <item name="5000">5000</item>
+        <item name="10000">10000</item>
+        <item name="0">0</item>
+    </string-array>
+
+</resources>

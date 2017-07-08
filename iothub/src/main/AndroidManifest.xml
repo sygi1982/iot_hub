@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sygmi.iothub.dash" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-sdk android:minSdkVersion="12" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@android:drawable/sym_def_app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <activity
+            android:name="com.sygmi.iothub.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/FullscreenTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter android:priority="100" >
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name="com.sygmi.iothub.SettingsActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+
+        <service
+            android:name="com.sygmi.ControllerService"
+            android:exported="true"
+            android:label="@string/app_name" >
+        </service>
+
+        <supports-screens
+            android:anyDensity="true"
+            android:largeScreens="true"
+            android:resizeable="true"
+            android:xlargeScreens="true" />
+
+        <service
+            android:name="com.sygmi.EndpointStateService"
+            android:enabled="false"
+            android:exported="false" >
+
+        </service>
+    </application>
+
+</manifest>
