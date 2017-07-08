@@ -1,0 +1,6 @@
+#luatool taken from nodemcu project
+
+luatool.py --src yet-another-dht22.lua --dest dht22.lua --baud 9600
+luatool.py --src esp8266_startup.lua --dest init.lua --baud 9600
+luatool.py --src esp8266_www_am2302.lua --dest main.lua --baud 9600
+luatool.py --src esp8266_conf.lua --dest conf.lua --baud 9600
